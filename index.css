@@ -141,6 +141,10 @@ ul {
     justify-content: space-between;
   }
 
+  .hamburger-menu {
+    transform: translate(0px, -5px);
+  }
+
   .hamburger-menu span:nth-child(1) {
     display: block;
     width: 30px;
@@ -162,11 +166,19 @@ ul {
     transform: translate(0px, 10px);
   }
 
+  .header-main {
+    margin: 15px 0px;
+  }
+
+  .header-main .header-logo img {
+    width: 150px;
+  }
+
   .header-main nav {
     display: none;
     position: absolute;
     z-index: 99999999;
-    top: 120px;
+    top: 110px;
     background-color: var(--mainBlue);
     right: 0;
     padding: 20px;
@@ -278,6 +290,7 @@ ul {
 .services .card {
   box-shadow: 0px 11px 13px -4px #00000012;
   transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  margin: 10px;
 }
 
 .services .card:hover {
@@ -397,6 +410,10 @@ input:focus {
 @media screen and (max-width: 768px) {
   .tariffs .calculate-form {
     margin-top: 0px;
+  }
+
+  .c-margin {
+    margin-top: 25px;
   }
 }
 
