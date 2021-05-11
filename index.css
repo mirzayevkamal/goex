@@ -49,12 +49,39 @@ h2 {
 }
 
 /* Header starts here */
+
+.header-top-wrapper {
+  width: 100%;
+  background: var(--mainRed);
+}
+
 .header-top {
   display: flex;
   justify-content: space-between;
-  padding: 15px 0px;
-  border-bottom: 1px solid var(--dividerColor);
   align-items: center;
+}
+
+.header-top .header-contact {
+  display: flex;
+  align-items: center;
+}
+
+.header-top .header-contact a {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.header-top .header-social ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.header-top .header-social ul li a {
+  color: white;
+  margin: 0px 10px;
 }
 
 .header-top .header-links {
@@ -68,7 +95,7 @@ h2 {
 .header-top .header-links li a {
   padding: 5px;
   text-decoration: none;
-  color: var(--mainBlue);
+  color: white;
   font-size: var(--smallSize);
 }
 
@@ -84,8 +111,12 @@ h2 {
   background-color: var(--mainBlue);
 }
 
+.header-lang a {
+  color: var(--mainBlue) !important;
+}
+
 .btn-lang {
-  color: #353b48 !important;
+  color: #fff !important;
   font-size: var(--smallSize) !important;
 }
 
@@ -95,8 +126,9 @@ h2 {
 }
 
 .btn-login:hover {
-  background-color: var(--mainBlue) !important;
+  background-color: var(--mainRed) !important;
   color: white !important;
+  border: 1px solid var(--mainRed) !important;
 }
 
 .btn:focus {
@@ -116,6 +148,7 @@ h2 {
   position: fixed;
   left: 0;
   transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: -1px 7px 23px -21px black;
 }
 
 .header-main {
@@ -140,7 +173,7 @@ h2 {
 
 .header-main nav ul li a {
   text-decoration: none;
-  padding: 20px;
+  padding: 10px;
   color: var(--mainBlue);
   font-weight: 600;
 }
@@ -150,18 +183,18 @@ h2 {
 }
 
 @media screen and (max-width: 950px) {
-  .header-top {
-    padding: 10px 0px;
-  }
-
   .header-top .header-links {
     display: none;
   }
 
-  .header-top .header-top-btns {
+  /* .header-top .header-top-btns {
     width: 100%;
     display: flex;
     justify-content: space-between;
+  } */
+
+  .header-top-btns {
+    display: none !important;
   }
 
   .hamburger-menu {
@@ -207,7 +240,7 @@ h2 {
     display: none;
     position: absolute;
     z-index: 99999999;
-    top: 110px;
+    top: 82px;
     background-color: var(--mainBlue);
     right: 0;
     padding: 20px;
@@ -244,13 +277,32 @@ h2 {
 /* Header ends here */
 
 /* Main starts here  */
+
+main {
+  transform: translate(0px, 82px);
+}
+
 .main-carousel {
-  background: url("https://goex.az/storage/sliders/AcnRzfcXOuqld5bUUYc3TpaVmwRskokuAV3Qc9jh.png") !important;
+  background: #dcdde1;
+  /* background: url("https://goex.az/storage/sliders/AcnRzfcXOuqld5bUUYc3TpaVmwRskokuAV3Qc9jh.png") !important; */
   height: 520px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transform: translate(0px, 90px);
+}
+
+.main-carousel .owl-dots button span {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 20px !important;
+  background: white !important;
+}
+
+.main-carousel .owl-dots button.active span {
+  background: var(--mainBlue) !important;
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 20px !important;
 }
 
 .main-carousel .main-carousel-wrapper {
@@ -261,15 +313,58 @@ h2 {
   display: flex !important;
 }
 
-.main-carousel .main-carousel-text {
+.main-carousel .owl-item.active .main-carousel-text {
+  transform: translate(0px, 60px);
   display: block;
-  animation: animateCarText 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  animation: animateCarText 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.main-carousel .owl-item.active .carousel-image {
+  animation: animateCarImg 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media screen and (max-width: 950px) {
+  .main-carousel .owl-item .main-carousel-text {
+    transform: translate(0px, -26px);
+    animation: animateCarText2 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .main-carousel .owl-item.active .main-carousel-text {
+    transform: translate(0px, -26px);
+    animation: animateCarText2 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  @keyframes animateCarText2 {
+    from {
+      opacity: 0;
+      transform: translate(0px, -40px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0px, -26px);
+    }
+  }
+
+  .main-carousel .btn-more {
+    display: none;
+  }
 }
 
 @keyframes animateCarText {
   from {
     opacity: 0;
-    transform: translate(0px, -50px);
+    transform: translate(0px, -40px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 60px);
+  }
+}
+
+@keyframes animateCarImg {
+  from {
+    opacity: 0;
+    transform: translate(0px, 40px);
   }
   to {
     opacity: 1;
@@ -278,21 +373,27 @@ h2 {
 }
 
 .main-carousel .main-carousel-text h1 {
-  font-size: 55px;
-  color: white;
+  font-size: 60px;
+  color: var(--mainBlue);
   font-weight: bold;
 }
 
 .main-carousel .main-carousel-text p {
-  color: rgb(247, 247, 247);
+  color: var(--mainRed);
   font-weight: 300;
   padding: 20px 0px;
 }
 
 .btn-more {
-  background: white;
-  color: var(--mainRed);
+  background: var(--mainBlue);
+  color: #fff;
   padding: 8px 20px;
+  border: none;
+}
+
+.btn-more:hover {
+  background: var(--mainRed);
+  color: white;
 }
 
 @media screen and (max-width: 950px) {
@@ -302,7 +403,7 @@ h2 {
   .main-carousel .main-carousel-text h1 {
     padding-top: 25px;
     font-size: 25px;
-    color: white;
+    color: var(--mainBlue);
     font-weight: bold;
   }
 
@@ -322,11 +423,41 @@ h2 {
   transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   margin: 10px;
   transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  overflow-x: hidden !important;
+}
+.card-body {
+  z-index: 10;
+}
+
+.card-cover {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  background: var(--mainBlue);
+  /* transform: translate(-80%, -80%); */
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.services .card:hover .card-cover {
+  height: 100%;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .services .card:hover {
   transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   transform: translate(0px, -10px);
+}
+
+.services .card:hover button {
+  background: white;
+  border: none;
+  color: var(--mainBlue);
+}
+
+.services .card:hover .services-text {
+  color: white !important;
 }
 
 .services .card:hover {

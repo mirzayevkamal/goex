@@ -36,73 +36,112 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="header-top">
-          <ul class="header-links">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="./about.html">Haqqımızda</a></li>
-            <li><a href="./tariffs.html">Xidmətlər</a></li>
-          </ul>
-          <div class="d-flex header-top-btns">
-            <div class="dropdown header-lang">
-              <button
-                class="goBtn btn-lang"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                AZ <i style="color: #353b48" class="fa fa-chevron-down"></i>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">EN</a></li>
-                <li><a class="dropdown-item" href="#">TR</a></li>
-                <li><a class="dropdown-item" href="#">RU</a></li>
+      <div class="header-top-wrapper">
+        <div class="container">
+          <div class="header-top">
+            <div class="d-flex">
+              <div class="header-social">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="header-links">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="./about.html">Haqqımızda</a></li>
+                <li><a href="./tariffs.html">Xidmətlər</a></li>
               </ul>
             </div>
+            <div class="header-contact">
+              <a href="tel:0709001100">
+                <i class="fal fa-phone"></i>
+                (994) 70 900-11-00
+              </a>
+              <div class="dropdown header-lang">
+                <button
+                  class="goBtn btn-lang"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  AZ <i style="color: #fff" class="fa fa-chevron-down"></i>
+                </button>
+                <ul
+                  style="z-index: 9999999999999"
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li><a class="dropdown-item" href="#">EN</a></li>
+                  <li><a class="dropdown-item" href="#">TR</a></li>
+                  <li><a class="dropdown-item" href="#">RU</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-main-wrapper">
+        <div class="header-main">
+          <div class="header-logo">
+            <a href="#">
+              <img
+                src="https://goex.az/public/site/image/logo.png"
+                alt="Site logo"
+              />
+            </a>
+          </div>
+          <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="./services.html">Xidmətlər</a>
+              </li>
+              <li>
+                <a href="./shops.html">Mağazalar</a>
+              </li>
+              <li>
+                <a href="./tariffs.html">Tariflər</a>
+              </li>
+              <li>
+                <a href="./news.html">Xəbərlər</a>
+              </li>
+              <li>
+                <a href="./about.html">Haqqımızda</a>
+              </li>
+              <li>
+                <a href="./contact.html">Əlaqə</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-top-btns">
             <div class="profile-buttons">
               <button class="goBtn btn-login">Daxil ol</button>
               <button class="goBtn btn-register">Qeydiyyat</button>
             </div>
-          </div>
-        </div>
-        <div class="header-main-wrapper">
-          <div class="header-main">
-            <div class="header-logo">
-              <a href="#">
-                <img
-                  src="https://goex.az/public/site/image/logo.png"
-                  alt="Site logo"
-                />
-              </a>
-            </div>
-            <div class="hamburger-menu">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <nav>
-              <ul>
-                <li>
-                  <a href="./services.html">Xidmətlər</a>
-                </li>
-                <li>
-                  <a href="./shops.html">Mağazalar</a>
-                </li>
-                <li>
-                  <a href="./tariffs.html">Tariflər</a>
-                </li>
-                <li>
-                  <a href="./news.html">Xəbərlər</a>
-                </li>
-                <li>
-                  <a href="./about.html">Haqqımızda</a>
-                </li>
-                <li>
-                  <a href="./contact.html">Əlaqə</a>
-                </li>
-              </ul>
-            </nav>
           </div>
         </div>
       </div>
@@ -110,19 +149,11 @@
     <main>
       <section class="main-carousel">
         <div class="main-carousel-wrapper">
-          <div class="owl-carousel">
+          <div class="owl-carousel owl-theme">
             <div class="container">
               <div class="carousel-div">
                 <div class="row">
-                  <div class="col-lg-6 col-md-6 order-sm-1">
-                    <div class="carousel-image">
-                      <img
-                        src="https://goex.az/storage/sliders/0X3udShXWF8VgTPAW22hhjz9ioTZNroG0Xv1B5nH.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 order-sm-2">
+                  <div class="col-lg-6 col-md-6">
                     <div class="main-carousel-text">
                       <h1>Sürətli Çatdırılma, Etibarlı xidmət</h1>
                       <p>
@@ -132,13 +163,7 @@
                       <a href="#" class="goBtn btn-more">Ətraflı oxu</a>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="carousel-div">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 order-sm-1">
+                  <div class="col-lg-6 col-md-6">
                     <div class="carousel-image">
                       <img
                         src="https://goex.az/storage/sliders/0X3udShXWF8VgTPAW22hhjz9ioTZNroG0Xv1B5nH.png"
@@ -146,14 +171,28 @@
                       />
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-6 order-sm-2">
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="carousel-div">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
                     <div class="main-carousel-text">
-                      <h1>Möhtəşəm Xidmət, Etibarlı qaqalar</h1>
+                      <h1>Sürətli Çatdırılma, Etibarlı xidmət</h1>
                       <p>
                         Qaqa canı işıq sürətiynın çatdıracağıq. İnan mənə. Gör
                         indi qaqan nağarajax
                       </p>
                       <a href="#" class="goBtn btn-more">Ətraflı oxu</a>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="carousel-image">
+                      <img
+                        src="https://goex.az/storage/sliders/0X3udShXWF8VgTPAW22hhjz9ioTZNroG0Xv1B5nH.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -186,19 +225,21 @@
                     <button class="goBtn btn-login">Daha çox</button>
                   </div>
                 </div>
+                <div class="card-cover"></div>
               </div>
             </div>
+
             <div class="col-lg-3 col-md-6">
               <div class="card border-0">
                 <div class="card-body">
                   <div class="services-icon">
                     <i
                       style="font-size: 50px; color: white"
-                      class="fal fa-shield-check"
+                      class="fal fa-person-carry"
                     ></i>
                   </div>
                   <div class="services-text text-center mt-3">
-                    <h6>Ödənişsiz sığorta</h6>
+                    <h6>Qapıda ödəmə</h6>
                     <p>
                       Mənasız bir neçə sətr tekst gəlir bra sonra isə daha çox
                       düyməsinə klik edib tam versiyanı açır
@@ -206,6 +247,7 @@
                     <button class="goBtn btn-login">Daha çox</button>
                   </div>
                 </div>
+                <div class="card-cover"></div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -226,6 +268,7 @@
                     <button class="goBtn btn-login">Daha çox</button>
                   </div>
                 </div>
+                <div class="card-cover"></div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -246,6 +289,7 @@
                     <button class="goBtn btn-login">Daha çox</button>
                   </div>
                 </div>
+                <div class="card-cover"></div>
               </div>
             </div>
           </div>

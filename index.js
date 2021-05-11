@@ -6,8 +6,12 @@ var headerMain = document.querySelector(".header-main-wrapper");
 
 window.addEventListener("scroll", function () {
   console.log(window.pageYOffset);
-  if (window.pageYOffset > 60) {
-    headerMain.style.transform = "translate(0px,-72px)";
+  if (window.pageYOffset > 20) {
+    if (window.innerWidth < 950) {
+      headerMain.style.transform = "translate(0px,-50px)";
+    } else {
+      headerMain.style.transform = "translate(0px,-45px)";
+    }
   } else {
     headerMain.style.transform = "translate(0px,0px)";
   }
@@ -16,7 +20,7 @@ window.addEventListener("scroll", function () {
 $(document).ready(function () {
   $(".main-carousel .owl-carousel").owlCarousel({
     autoplay: true,
-    autoplayTimeout: 8000,
+    autoplayTimeout: 5000,
     animateOut: "fadeOut",
     margin: 10,
     responsiveClass: true,
