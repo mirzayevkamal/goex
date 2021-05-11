@@ -2,6 +2,17 @@ $(".hamburger-menu").on("click", function () {
   $(" .header-main nav").slideToggle();
 });
 
+var headerMain = document.querySelector(".header-main-wrapper");
+
+window.addEventListener("scroll", function () {
+  console.log(window.pageYOffset);
+  if (window.pageYOffset > 60) {
+    headerMain.style.transform = "translate(0px,-72px)";
+  } else {
+    headerMain.style.transform = "translate(0px,0px)";
+  }
+});
+
 $(document).ready(function () {
   $(".main-carousel .owl-carousel").owlCarousel({
     autoplay: true,
