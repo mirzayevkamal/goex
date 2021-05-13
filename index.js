@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
   console.log(window.pageYOffset);
   if (window.pageYOffset > 20) {
     if (window.innerWidth < 950) {
-      headerMain.style.transform = "translate(0px,-50px)";
+      headerMain.style.transform = "translate(0px,-43px)";
     } else {
       headerMain.style.transform = "translate(0px,-45px)";
     }

@@ -36,36 +36,70 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="header-top">
-          <ul class="header-links">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="./about.html">Haqqımızda</a></li>
-            <li><a href="./tariffs.html">Xidmətlər</a></li>
-          </ul>
-          <div class="d-flex header-top-btns">
-            <div class="dropdown header-lang">
-              <button
-                class="goBtn btn-lang"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                AZ <i style="color: #353b48" class="fa fa-chevron-down"></i>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">EN</a></li>
-                <li><a class="dropdown-item" href="#">TR</a></li>
-                <li><a class="dropdown-item" href="#">RU</a></li>
+      <div class="header-top-wrapper">
+        <div class="container">
+          <div class="header-top">
+            <div class="d-flex">
+              <div class="header-social">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="header-links">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="./about.html">Haqqımızda</a></li>
+                <li><a href="./tariffs.html">Xidmətlər</a></li>
               </ul>
             </div>
-            <div class="profile-buttons">
-              <button class="goBtn btn-login">Daxil ol</button>
-              <button class="goBtn btn-register">Qeydiyyat</button>
+            <div class="header-contact">
+              <a href="tel:0709001100">
+                <i class="fal fa-phone"></i>
+                (994) 70 900-11-00
+              </a>
+              <div class="dropdown header-lang">
+                <button
+                  class="goBtn btn-lang"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  AZ <i style="color: #fff" class="fa fa-chevron-down"></i>
+                </button>
+                <ul
+                  style="z-index: 9999999999999"
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li><a class="dropdown-item" href="#">EN</a></li>
+                  <li><a class="dropdown-item" href="#">TR</a></li>
+                  <li><a class="dropdown-item" href="#">RU</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="header-main-wrapper">
         <div class="header-main">
           <div class="header-logo">
             <a href="#">
@@ -102,17 +136,25 @@
               </li>
             </ul>
           </nav>
+          <div class="header-top-btns">
+            <div class="profile-buttons">
+              <button class="goBtn btn-login">Daxil ol</button>
+              <button class="goBtn btn-register">Qeydiyyat</button>
+            </div>
+          </div>
         </div>
       </div>
     </header>
+
     <main>
       <section class="news py-5">
         <div class="container">
           <div class="row">
             <div class="text-center my-5">
-              <h2>Xəbərlər</h2>
+              <h1>Xəbərlər</h1>
+              <p class="header-p">Ən son yenilikləri sizlərlə bölüşürük</p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3 col-md-6">
               <div class="card">
                 <img
                   class="card-img-top"
@@ -126,13 +168,16 @@
                     Consectetur corrupti molestias voluptates rerum ex libero
                     officiis non quidem ullam nisi!
                   </p>
-                  <div class="text-right">
-                    <button class="goBtn btn-login">Ətraflı oxu</button>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p class="news-date">12.05.2021 15:00</p>
+                    <a href="#" class="read-more">Ətraflı oxu</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3 col-md-6">
               <div class="card">
                 <img
                   class="card-img-top"
@@ -146,13 +191,16 @@
                     Consectetur corrupti molestias voluptates rerum ex libero
                     officiis non quidem ullam nisi!
                   </p>
-                  <div class="text-right">
-                    <button class="goBtn btn-login">Ətraflı oxu</button>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p class="news-date">12.05.2021 15:00</p>
+                    <a href="#" class="read-more">Ətraflı oxu</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3 col-md-6">
               <div class="card">
                 <img
                   class="card-img-top"
@@ -166,8 +214,34 @@
                     Consectetur corrupti molestias voluptates rerum ex libero
                     officiis non quidem ullam nisi!
                   </p>
-                  <div class="text-right">
-                    <button class="goBtn btn-login">Ətraflı oxu</button>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p class="news-date">12.05.2021 15:00</p>
+                    <a href="#" class="read-more">Ətraflı oxu</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://goex.az/storage/information/oVjBQ3o5AG0z3PWp3ulpJCgXIIydryLy2AnFL0zk.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h5 class="card-title">This is xəbərlər</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur corrupti molestias voluptates rerum ex libero
+                    officiis non quidem ullam nisi!
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p class="news-date">12.05.2021 15:00</p>
+                    <a href="#" class="read-more">Ətraflı oxu</a>
                   </div>
                 </div>
               </div>
@@ -176,6 +250,7 @@
         </div>
       </section>
     </main>
+
     <footer>
       <div class="container">
         <div class="row">
@@ -285,6 +360,23 @@
         <div class="text-center">&#169; Copyright 2021</div>
       </div>
     </footer>
+
+    <div class="mobile-bottom-menu">
+      <div class="mobile-bottom-menu-items">
+        <a href="#" class="bottom-menu-item">
+          <i class="fad fa-user"></i>
+          <p>Giriş</p>
+        </a>
+        <a href="#" class="bottom-menu-item">
+          <i class="fad fa-user-plus"></i>
+          <p>Qeydiyyat</p>
+        </a>
+        <a href="#" class="bottom-menu-item">
+          <i class="far fa-headset"></i>
+          <p>Əlaqə</p>
+        </a>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"

@@ -243,10 +243,6 @@ h2 {
     transform: translate(0px, 10px);
   }
 
-  .header-main-wrapper {
-    padding-top: 10px;
-  }
-
   .header-main {
     margin: 15px 0px;
     width: 86%;
@@ -300,7 +296,7 @@ h2 {
 /* Main starts here  */
 
 main {
-  transform: translate(0px, 82px);
+  transform: translate(0px, 70px);
 }
 
 .main-carousel {
@@ -337,7 +333,7 @@ main {
 .main-carousel .owl-item.active .main-carousel-text {
   transform: translate(0px, 60px);
   display: block;
-  animation: animateCarText 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+  animation: animateCarText 1.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .main-carousel .owl-item.active .carousel-image {
@@ -348,12 +344,12 @@ main {
 @media screen and (max-width: 950px) {
   .main-carousel .owl-item .main-carousel-text {
     transform: translate(0px, -26px);
-    animation: animateCarText2 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+    animation: animateCarText2 1.3s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
   .main-carousel .owl-item.active .main-carousel-text {
     transform: translate(0px, -26px);
-    animation: animateCarText2 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+    animation: animateCarText2 1.3s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
   @keyframes animateCarText2 {
@@ -467,7 +463,7 @@ main {
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.services .card:hover {
+.services .card-body:hover {
   transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   transform: translate(0px, -10px);
 }
@@ -624,6 +620,31 @@ input:focus {
   margin-top: 48px;
 }
 
+.tariffs .calc-image {
+  animation: animeImg 9.5s linear infinite;
+}
+
+@keyframes animeImg {
+  0% {
+    transform: translate(10px, 20px);
+  }
+  20% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(20px, 10px);
+  }
+  60% {
+    transform: translate(0px, 0px);
+  }
+  80% {
+    transform: translate(10px, 20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .tariffs .calculate-form {
     margin-top: 0px;
@@ -636,6 +657,10 @@ input:focus {
 
   .c-margin {
     margin-top: 25px;
+  }
+
+  .contact-details ul li {
+    font-size: 14px;
   }
 }
 
@@ -715,12 +740,12 @@ input:focus {
   height: 120px;
   border-radius: 100px;
   background: white;
-  transition: 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .shops-carousel a:hover {
   border: 1px solid var(--mainBlue);
-  transition: 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   transform: rotate(1turn);
 }
 
@@ -769,7 +794,8 @@ input:focus {
 
 footer {
   background: var(--mainBlue);
-  padding-top: 150px;
+  padding-top: 30px;
+  margin-top: 80px;
 }
 
 .footer-logo img {
@@ -991,8 +1017,13 @@ footer h5 {
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.mobile-bottom-menu {
+  display: none;
+}
+
 @media screen and (max-width: 950px) {
   .mobile-bottom-menu {
+    display: block !important;
     width: 100%;
     background: var(--mainBlue);
     position: fixed;
