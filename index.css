@@ -261,7 +261,7 @@ h2 {
     display: none;
     position: absolute;
     z-index: 99999999;
-    top: 72px;
+    top: 71px;
     background-color: var(--mainBlue);
     right: 0;
     padding: 20px;
@@ -310,6 +310,19 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .main-carousel .owl-dots button span {
@@ -447,9 +460,11 @@ main {
   transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   position: relative;
   overflow-x: hidden !important;
+  border-top: 2px solid white !important;
 }
 .card-body {
   z-index: 10;
+  transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .card-cover {
@@ -457,7 +472,7 @@ main {
   width: 100%;
   height: 0%;
   bottom: 0;
-  background: var(--mainBlue);
+  background: #fff;
   /* transform: translate(-80%, -80%); */
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -479,17 +494,17 @@ main {
 }
 
 .services .card:hover .services-text {
-  color: white !important;
+  color: var(--mainBlue) !important;
 }
 
 .services .card:hover {
   box-shadow: 0px 11px 13px -4px #00000033;
   transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  border-top: 2px solid var(--mainBlue) !important;
 }
 
 .services .services-icon {
   text-align: center;
-  background: var(--mainBlue);
   width: 100px;
   height: 100px;
   margin: auto;
@@ -514,8 +529,20 @@ main {
 }
 
 .tariffs table {
-  border-radius: 10px !important;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
   background: #f1f1f1; /* fallback for old browsers */
+}
+
+.tariffs .nav-link {
+  color: var(--mainBlue) !important;
+  font-weight: 600 !important;
+  border-bottom: none !important;
+}
+
+.tariffs .nav-link.active {
+  background: #f1f1f1 !important;
 }
 
 .tariffs thead th {
@@ -1179,6 +1206,23 @@ footer h5 {
 
 .login-form {
   width: 400px;
+  padding: 30px 20px !important;
+  height: auto;
+  box-shadow: 0px 5px 15px -2px #00000038;
+  border-radius: 6px;
+  z-index: 15;
+}
+
+.login-bg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-bg img {
+  width: 100%;
 }
 
 /* Main ends here */

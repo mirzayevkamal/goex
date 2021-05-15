@@ -20,7 +20,7 @@ window.addEventListener("scroll", function () {
 $(document).ready(function () {
   $(".main-carousel .owl-carousel").owlCarousel({
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 9000,
     animateOut: "fadeOut",
     margin: 10,
     responsiveClass: true,
