@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./admin.css" />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -138,253 +139,272 @@
           </nav>
           <div class="header-top-btns">
             <div class="profile-buttons">
-              <a href="./login.html" class="goBtn btn-login">Daxil ol</a>
-              <a href="./register.html" class="goBtn btn-register">Qeydiyyat</a>
+              <a href="./index.html" class="goBtn btn-login">
+                <i class="fad fa-user"></i> Ad Soyad</a
+              >
             </div>
           </div>
         </div>
       </div>
     </header>
-    <main>
-      <section class="tariffs py-lg-5">
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-lg-7">
-              <div class="text-center mb-5">
-                <h2>Tariflər</h2>
-              </div>
 
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link active"
-                    id="home-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#home"
-                    type="button"
-                    role="tab"
-                    aria-controls="home"
-                    aria-selected="true"
-                  >
-                    Türkiyə
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="profile-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#profile"
-                    type="button"
-                    role="tab"
-                    aria-controls="profile"
-                    aria-selected="false"
-                  >
-                    Amerika
-                  </button>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="home"
-                  role="tabpanel"
-                  aria-labelledby="home-tab"
+    <!-- Main container -->
+    <div class="container-goex pt-5">
+      <!-- Profile wrapper grid -->
+      <div class="profile-wrapper">
+        <!-- Mobile-sidebar(menu for user) -->
+        <div class="mobile-sidebar">
+          <div class="dropdown">
+            <button
+              class="btn w-100 goex-mobile-btn dropdown-toggle"
+              type="button"
+              id="goex-sidebar"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i style="margin-right: 5px" class="fad fa-user"></i> Ad Soyad
+              (ID: G677658)
+            </button>
+            <ul
+              class="dropdown-menu w-100 shadow-lg"
+              aria-labelledby="goex-sidebar"
+            >
+              <li>
+                <a href="#"><i class="fa fa-store"></i>Sifarişlərim</a>
+              </li>
+              <li>
+                <a href="#"><i class="fad fa-box"></i> Bağlamalarım</a>
+              </li>
+              <li>
+                <a href="#"><i class="fad fa-id-card-alt"></i> Etibarnamələr</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fad fa-credit-card-front"></i> Ödənişlər</a
                 >
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Ölçü</th>
-                        <th scope="col">Tip</th>
-                        <th scope="col">Qiymət</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>0 - 250 qr</td>
-                        <td>Digər</td>
-                        <td>1.00 USD</td>
-                      </tr>
-                      <tr>
-                        <td>0 - 250 qr</td>
-                        <td>Digər</td>
-                        <td>1.00 USD</td>
-                      </tr>
-                      <tr>
-                        <td>0 - 250 qr</td>
-                        <td>Digər</td>
-                        <td>1.00 USD</td>
-                      </tr>
-                      <tr>
-                        <td>0 - 250 qr</td>
-                        <td>Digər</td>
-                        <td>1.00 USD</td>
-                      </tr>
-                      <tr>
-                        <td>0 - 250 qr</td>
-                        <td>Digər</td>
-                        <td>1.00 USD</td>
-                      </tr>
-                    </tbody>
-                  </table>
+              </li>
+              <li>
+                <a href="#"><i class="fad fa-wallet"></i> Balansım</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-minus-hexagon"></i>Borclar</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fad fa-file-signature"></i>Müraciətlərim</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fad fa-sync"></i>Referallar</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-person-carry"></i> Kuryer xidməti</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fad fa-clipboard-list"></i> Kuryer sifarişlərim</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fad fa-user"></i> Şəxsi məlumatlarım</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-sign-out-alt"></i> Çıxış</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Sidebar wrapper desktop -->
+        <div class="sidebar-wrapper shadow">
+          <div class="user-id">
+            <i class="fad fa-id-card-alt"></i>
+            <h5>Ad Soyad</h5>
+            <h6>ID: G677658</h6>
+          </div>
+          <ul>
+            <li>
+              <a href="./index.html"><i class="fa fa-store"></i>Sifarişlərim</a>
+            </li>
+            <li>
+              <a href="./locations.html"
+                ><i class="fad fa-map-marked-alt"></i> Ünvanlarım</a
+              >
+            </li>
+            <li>
+              <a href="./packages.html"
+                ><i class="fad fa-box"></i> Bağlamalarım</a
+              >
+            </li>
+            <li>
+              <a href="./friends.html"
+                ><i class="fad fa-id-card-alt"></i> Etibarnamələr</a
+              >
+            </li>
+            <li>
+              <a class="active" href="./payments.html"
+                ><i class="fad fa-credit-card-front"></i> Ödənişlər</a
+              >
+            </li>
+            <li>
+              <a href="./balance.html"
+                ><i class="fad fa-wallet"></i> Balansım</a
+              >
+            </li>
+            <li>
+              <a href="./debts.html"
+                ><i class="fas fa-minus-hexagon"></i>Borclar</a
+              >
+            </li>
+            <li>
+              <a href="./appeals.html"
+                ><i class="fad fa-file-signature"></i>Müraciətlərim</a
+              >
+            </li>
+            <li>
+              <a href="./referrals.html"
+                ><i class="fad fa-sync"></i>Referallar</a
+              >
+            </li>
+            <li>
+              <a href="./couriers.html"
+                ><i class="fas fa-person-carry"></i> Kuryer xidməti</a
+              >
+            </li>
+            <li>
+              <a href="./courier-orders.html"
+                ><i class="fad fa-clipboard-list"></i> Kuryer sifarişlərim</a
+              >
+            </li>
+            <li>
+              <a href="./profile.html"
+                ><i class="fad fa-user"></i> Şəxsi məlumatlarım</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-sign-out-alt"></i> Çıxış</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Main contents wrapper -->
+        <div class="main-bar">
+          <!-- User balance boxes -->
+          <div class="user-boxes-wrapper">
+            <div class="container-fluid">
+              <div class="row">
+                <div
+                  class="col-xl-3 col-lg-6 col-md-6 col-6 p-lg-1 my-1 my-lg-0"
+                >
+                  <div class="user-box shadow-sm">
+                    <div class="box-info">
+                      <div class="box-headline">Daşınma balansı</div>
+                      <div class="box-text">$ 500.00</div>
+                    </div>
+                    <div class="box-icon gr-blue">
+                      <i class="fad fa-wallet"></i>
+                    </div>
+                  </div>
                 </div>
                 <div
-                  class="tab-pane fade"
-                  id="profile"
-                  role="tabpanel"
-                  aria-labelledby="profile-tab"
+                  class="col-xl-3 col-lg-6 col-md-6 col-6 p-lg-1 my-1 my-lg-0"
                 >
-                  <table class="table table-rounded">
-                    <thead>
-                      <tr>
-                        <th scope="col">Ölçü</th>
-                        <th scope="col">Tip</th>
-                        <th scope="col">Qiymət</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>0 - 250 qr</td>
-                        <td>Digər</td>
-                        <td>1.00 USD</td>
-                      </tr>
-                      <tr>
-                        <td>0 - 250 qr</td>
-                        <td>Digər</td>
-                        <td>1.00 USD</td>
-                      </tr>
-                      <tr>
-                        <td>0 - 250 qr</td>
-                        <td>Digər</td>
-                        <td>1.00 USD</td>
-                      </tr>
-                      <tr>
-                        <td>0 - 250 qr</td>
-                        <td>Digər</td>
-                        <td>1.00 USD</td>
-                      </tr>
-                      <tr>
-                        <td>0 - 250 qr</td>
-                        <td>Digər</td>
-                        <td>1.00 USD</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="user-box shadow-sm">
+                    <div class="box-info">
+                      <div class="box-headline">Sifariş balansı</div>
+                      <div class="box-text">$ 500.00</div>
+                    </div>
+                    <div class="box-icon gr-yellow">
+                      <i class="fas fa-usd-circle"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-6 col-md-6 col-6 p-lg-1 my-1 my-lg-0"
+                >
+                  <div class="user-box shadow-sm">
+                    <div class="box-info">
+                      <div class="box-headline">Limit</div>
+                      <div class="box-text">$ 500.00</div>
+                    </div>
+                    <div class="box-icon gr-green">
+                      <i class="fas fa-hourglass-start"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-6 col-md-6 col-6 p-lg-1 my-1 my-lg-0"
+                >
+                  <div class="user-box shadow-sm">
+                    <div class="box-info">
+                      <div class="box-headline">Bağlama sayı</div>
+                      <div class="box-text">$ 500.00</div>
+                    </div>
+                    <div class="box-icon gr-red">
+                      <i class="fad fa-box-open"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-5">
-              <img
-                width="100%"
-                src="https://image.freepik.com/free-vector/tariff-repay-compensate-online-services-duty-task-overlook-remuneration-imputed-cost-overtaxing-man-standing-with-phone-hands-isolated-concept-metaphor-illustration_335657-1223.jpg"
-                alt=""
-              />
             </div>
           </div>
-          <div class="row mt-5">
-            <div class="text-center">
-              <h1>Hesabla</h1>
+
+          <div class="profile-card shadow-sm">
+            <div class="row mb-3">
+              <div class="col-12 col-lg-3 my-lg-0 my-1">
+                <input class="form-control h-100" type="date" />
+              </div>
+              <div class="col-12 col-lg-3 my-lg-0 my-1">
+                <input class="form-control h-100" type="date" />
+              </div>
+              <div class="col-12 col-lg-3 my-lg-0 my-1">
+                <button class="goBtn btn-login w-100">
+                  <i class="fal fa-print-search"></i>
+                  Axtar
+                </button>
+              </div>
             </div>
-            <div class="col-lg-6">
-              <img
-                class="calc-image"
-                width="90%"
-                src="https://image.freepik.com/free-vector/net-income-calculating-abstract-concept-illustration-salary-calculation-net-income-formula-take-home-pay-corporate-accounting-calculating-earnings-profit-estimation_335657-1238.jpg"
-                alt=""
-              />
-            </div>
-            <div class="col-lg-6">
-              <form class="calculate-form" action="/OBBAA">
-                <div class="row py-4">
-                  <div class="col-6">
-                    <div class="d-flex flex-column">
-                      <h6>Məhsul tipi</h6>
-                      <select
-                        class="calc-input"
-                        required
-                        name="product_type"
-                        id="product_type"
-                      >
-                        <option value="0" selected>Digər</option>
-                        <option value="1">Maye</option>
-                        <option value="2">Sənəd</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="d-flex flex-column">
-                      <h6>Ölkə</h6>
-                      <select
-                        class="calc-input"
-                        required
-                        name="country_id"
-                        id="country_id"
-                      >
-                        <option value="1" selected>Türkiyə</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-4">
-                  <div class="col-lg-6 mt-3 col-md-12">
-                    <h6>Eni(sm)</h6>
-                    <input
-                      class="calc-input"
-                      name="width"
-                      type="number"
-                      placeholder="0"
-                      required
-                      min="0"
-                    />
-                  </div>
-                  <div class="col-lg-6 mt-3 col-md-12">
-                    <h6>Hündürlük(sm)</h6>
-                    <input
-                      class="calc-input"
-                      name="width"
-                      type="number"
-                      placeholder="0"
-                      required
-                      min="0"
-                    />
-                  </div>
-                  <div class="col-lg-6 mt-3 col-md-12">
-                    <h6>Uzunluq(sm)</h6>
-                    <input
-                      class="calc-input"
-                      name="width"
-                      type="number"
-                      placeholder="0"
-                      required
-                      min="0"
-                    />
-                  </div>
-                  <div class="col-lg-6 mt-3 col-md-12">
-                    <h6>Çəki(kq)</h6>
-                    <input
-                      class="calc-input"
-                      name="width"
-                      type="number"
-                      placeholder="0"
-                      required
-                      min="0"
-                    />
-                  </div>
-                </div>
-                <div class="row mt-4">
-                  <div class="col-lg-6">
-                    <div class="calculated-price"><span>$</span>10.00</div>
-                  </div>
-                  <div class="col-lg-6">
-                    <button class="goBtn btn-calculate">HESABLA</button>
-                  </div>
-                </div>
-              </form>
+            <div class="table-responsive table-rounded">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Sifariş №</th>
+                    <th scope="col">Məbləğ</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Tarix</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
+
+    <div class="mobile-bottom-menu">
+      <div class="mobile-bottom-menu-items">
+        <a href="./index.html" class="bottom-menu-item">
+          <i class="fad fa-user"></i>
+          <p>Profil</p>
+        </a>
+        <a href="./register.html" class="bottom-menu-item">
+          <i class="fad fa-box"></i>
+          <p>Bağlamalar</p>
+        </a>
+        <a href="./contact.html" class="bottom-menu-item">
+          <i class="fad fa-paperclip"></i>
+          <p>Bəyan et</p>
+        </a>
+      </div>
+    </div>
     <footer>
       <div class="container">
         <div class="row">
@@ -494,24 +514,6 @@
         <div class="text-center">&#169; Copyright 2021</div>
       </div>
     </footer>
-
-    <div class="mobile-bottom-menu">
-      <div class="mobile-bottom-menu-items">
-        <a href="./index.html" class="bottom-menu-item">
-          <i class="fad fa-user"></i>
-          <p>Giriş</p>
-        </a>
-        <a href="./register.html" class="bottom-menu-item">
-          <i class="fad fa-user-plus"></i>
-          <p>Qeydiyyat</p>
-        </a>
-        <a href="./contact.html" class="bottom-menu-item">
-          <i class="far fa-headset"></i>
-          <p>Əlaqə</p>
-        </a>
-      </div>
-    </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"

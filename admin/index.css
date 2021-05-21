@@ -528,42 +528,42 @@ main {
   background: rgb(255, 255, 255);
 }
 
-table {
+.tariffs table {
   border-left: 1px solid #dee2e6;
   border-right: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
   background: #f1f1f1; /* fallback for old browsers */
 }
 
-.nav-link {
+.tariffs .nav-link {
   color: var(--mainBlue) !important;
   font-weight: 600 !important;
   border-bottom: none !important;
 }
 
-.nav-link.active {
+.tariffs .nav-link.active {
   background: #f1f1f1 !important;
 }
 
-thead th {
+.tariffs thead th {
   color: var(--mainBlue);
 }
 
-tbody {
+.tariffs tbody {
   background: white;
   border-radius: 10px !important;
   font-weight: 600;
   color: var(--mainBlue);
 }
 
-.tariff-btn {
+.tariffs .tariff-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid var(--mainRed);
 }
 
-.tariff-btn:hover {
+.tariffs .tariff-btn:hover {
   background: var(--mainRed);
   color: white;
 }

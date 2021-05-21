@@ -99,7 +99,3 @@ $(document).ready(function () {
     },
   });
 });
-
-var phoneMask = IMask(document.getElementById("phone"), {
-  mask: "+{994}(00)000-00-00",
-});
